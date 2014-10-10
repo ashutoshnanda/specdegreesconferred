@@ -137,7 +137,6 @@ def file_to_matrix(key, filetype):
     print(sep)
     print()
     if key < 2011:
-        print(table)
         for i in range(len(table)):
             if sum([type(item) == int for item in table[i]]) == 1:
                 value = 0
@@ -160,7 +159,15 @@ def file_to_matrix(key, filetype):
                         table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
                 else:
                     #filetype == 'en'
-                    table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]                    
+                    table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]
+            else:
+                if any([type(table[i][j]) == int for j in range(len(table[i]))]):
+                    number = 0
+                    for j in range(len(table[i])):
+                        if type(table[i][j]) == int:
+                            number = table[i][j]
+                            break
+                    table[i] = ['', '', '', '', '', 'Total Number of Degrees', number]
     return table
         
 def matrix_to_tsv(table, key, filetype):
