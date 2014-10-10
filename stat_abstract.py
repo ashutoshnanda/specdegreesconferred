@@ -1,5 +1,6 @@
 import urllib.request
 import re
+import os.path
 
 #===============================================
 
@@ -45,8 +46,9 @@ urls = {2012: ("http://www.columbia.edu/cu/opir/abstract/opir_ccug_degrees_by_pr
 
 sep = "================================================="
 
-web_file_format = "html/%s-%d.html"
+web_file_format = 'html/%s-%d.html'
 data_file_format = 'data/%s-%d.tsv'
+data_dir = 'data/'
 
 #===============================================
 
@@ -159,6 +161,8 @@ def file_to_matrix(key, filetype):
     return table
         
 def matrix_to_tsv(table, key, filetype):
+    if not os.path.isdir(data_dir):
+        os.mkdir(data_dir)
     file = open(data_file_format % (filetype, key), 'w')
     for row in table:
         if any([type(item) == int for item in row]):
