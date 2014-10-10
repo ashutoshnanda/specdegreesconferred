@@ -1,60 +1,60 @@
-African Studies	Institute of African Studies	3	0	1	0	4
-African-American Studies	Institute for Research inAfrican-American Studies	4	0	0	0	4
-American Studies	Center for American Studies	7	0	1	0	8
-Ancient Studies	Classics	1	0	0	0	1
-Anthropology	Anthropology	12	0	1	0	13
-Archaeology	Archaeology	1	0	0	0	1
-Architecture	Architecture (Barnard)	2	0	0	0	2
-Art History	Art History & Archaeology	9	0	1	0	10
-Art History and VisualArts	Art History & Archaeology,Visual Arts (Arts) **	0	3	0	0	3
-Astrophysics	Astronomy, Physics **	0	2	0	0	2
-Biochemistry	BiologicalSciences, Chemistry **	0	5	0	0	5
-Biological Sciences	Biological Sciences	7	0	0	0	7
-Chemistry	Chemistry	1	0	1	0	2
-Classics	Classics	2	0	0	0	2
-Comparative EthnicStudies	Center for the Study ofEthnicity and Race	0	0	1	0	1
-ComputerScience	Computer Science(Engineering)	8	0	1	0	9
-Creative Writing	Writing: Undergraduate (Arts)	17	0	0	0	17
-Earth Sciences	Earth and Environmental Sciences	1	0	0	0	1
-East Asian Studies	East Asian Languages &Cultures	2	0	0	0	2
-Economics	Economics	34	0	1	0	35
-Economics-Mathematics	Economics,Mathematics **	0	11	0	0	11
-Economics-OperationsResearch	Economics, IndustrialEngineering & Operations Research **	0	1	0	0	1
-Economics-Philosophy	Economics, Philosophy **	0	3	0	0	3
-Economics-PoliticalScience	Economics, Political Science **	0	2	0	0	2
-Economics-Statistics	Economics, Statistics **	0	1	0	0	1
-English	English &Comparative Literature	14	0	1	0	15
-Environmental Biology	Ecology, Evolution, andEnvironmental Biology	2	0	0	0	2
-Environmental Science	Earth and Environmental Sciences	1	0	0	0	1
-Ethnicity & Race	Center for the Study ofEthnicity and Race	1	0	0	0	1
-Evolutionary Biology ofthe Human Species	Ecology, Evolution, andEnvironmental Biology	1	0	0	0	1
-FilmStudies	Film (Arts)	5	0	0	0	5
-Financial Economics	Economics	11	0	0	0	11
-French	French & Romance Philology	3	0	0	0	3
-German Literature andCultural History	Germanic Languages	1	0	0	0	1
-Hispanic Studies	Latin American and IberianCultures	1	0	1	0	2
-History	History	24	0	1	0	25
-History and Theory ofArchitecture	Art History & Archaeology	0	0	1	0	1
-History/Theory ofArchitecture	Art History & Archaeology	1	0	0	0	1
-Linguistics	Slavic Languages	0	0	1	0	1
-Mathematics	Mathematics	6	0	2	0	8
-Mathematics-Statistics	Mathematics,Statistics **	0	1	0	0	1
-Middle East and AsianLanguages and Cultures	Middle East and Asian Languagesand Cultures	6	0	1	0	7
-Music	Music	2	0	0	0	2
-Neuroscience andBehavior	Biological Sciences, Psychology**	0	8	0	0	8
-Philosophy	Philosophy	14	0	1	0	15
-Physics	Physics	0	0	1	0	1
-Political Science	Political Science	48	0	2	0	50
-Pre-Medical	General Studies	0	0	2	0	2
-Psychology	Psychology	36	0	3	0	39
-Regional Studies	Associated Institutes	1	0	0	0	1
-Religion	Religion	4	0	0	0	4
-Russian Literature &Cultures	Slavic Languages	0	0	1	0	1
-Sociology	Sociology	10	0	0	0	10
-Sustainable Development	Earth Institute	4	0	0	0	4
-Theatre Arts	Drama And Theatre Arts (Barnard)	1	0	0	0	1
-UrbanStudies	Urban Studies(Barnard)	7	0	0	0	7
-Visual Arts	Visual Arts (Arts)	3	0	2	0	5
-Women's Studies	Women's and Gender Studies	1	0	0	0	1
-Grand Totals	319	37	28	384	0	
+africanstudies	Institute of African Studies	3	0	1	0	4
+africanamericanstudies	Institute for Research inAfrican-American Studies	4	0	0	0	4
+americanstudies	Center for American Studies	7	0	1	0	8
+ancientstudies	Classics	1	0	0	0	1
+anthropology	Anthropology	12	0	1	0	13
+archaeology	Archaeology	1	0	0	0	1
+architecture	Architecture (Barnard)	2	0	0	0	2
+arthistory	Art History & Archaeology	9	0	1	0	10
+arthistoryandvisualarts	Art History & Archaeology,Visual Arts (Arts) **	0	3	0	0	3
+astrophysics	Astronomy, Physics **	0	2	0	0	2
+biochemistry	BiologicalSciences, Chemistry **	0	5	0	0	5
+biologicalsciences	Biological Sciences	7	0	0	0	7
+chemistry	Chemistry	1	0	1	0	2
+classics	Classics	2	0	0	0	2
+comparativeethnicstudies	Center for the Study ofEthnicity and Race	0	0	1	0	1
+computerscience	Computer Science(Engineering)	8	0	1	0	9
+creativewriting	Writing: Undergraduate (Arts)	17	0	0	0	17
+earthsciences	Earth and Environmental Sciences	1	0	0	0	1
+eastasianstudies	East Asian Languages &Cultures	2	0	0	0	2
+economics	Economics	34	0	1	0	35
+economicsmathematics	Economics,Mathematics **	0	11	0	0	11
+economicsoperationsresearch	Economics, IndustrialEngineering & Operations Research **	0	1	0	0	1
+economicsphilosophy	Economics, Philosophy **	0	3	0	0	3
+economicspoliticalscience	Economics, Political Science **	0	2	0	0	2
+economicsstatistics	Economics, Statistics **	0	1	0	0	1
+english	English &Comparative Literature	14	0	1	0	15
+environmentalbiology	Ecology, Evolution, andEnvironmental Biology	2	0	0	0	2
+environmentalscience	Earth and Environmental Sciences	1	0	0	0	1
+ethnicityandrace	Center for the Study ofEthnicity and Race	1	0	0	0	1
+evolutionarybiologyofthehumanspecies	Ecology, Evolution, andEnvironmental Biology	1	0	0	0	1
+filmstudies	Film (Arts)	5	0	0	0	5
+financialeconomics	Economics	11	0	0	0	11
+french	French & Romance Philology	3	0	0	0	3
+germanliteratureandculturalhistory	Germanic Languages	1	0	0	0	1
+hispanicstudies	Latin American and IberianCultures	1	0	1	0	2
+history	History	24	0	1	0	25
+historyandtheoryofarchitecture	Art History & Archaeology	0	0	1	0	1
+history/theoryofarchitecture	Art History & Archaeology	1	0	0	0	1
+linguistics	Slavic Languages	0	0	1	0	1
+mathematics	Mathematics	6	0	2	0	8
+mathematicsstatistics	Mathematics,Statistics **	0	1	0	0	1
+middleeastandasianlanguagesandcultures	Middle East and Asian Languagesand Cultures	6	0	1	0	7
+music	Music	2	0	0	0	2
+neuroscienceandbehavior	Biological Sciences, Psychology**	0	8	0	0	8
+philosophy	Philosophy	14	0	1	0	15
+physics	Physics	0	0	1	0	1
+politicalscience	Political Science	48	0	2	0	50
+premedical	General Studies	0	0	2	0	2
+psychology	Psychology	36	0	3	0	39
+regionalstudies	Associated Institutes	1	0	0	0	1
+religion	Religion	4	0	0	0	4
+russianliteratureandcultures	Slavic Languages	0	0	1	0	1
+sociology	Sociology	10	0	0	0	10
+sustainabledevelopment	Earth Institute	4	0	0	0	4
+theatrearts	Drama And Theatre Arts (Barnard)	1	0	0	0	1
+urbanstudies	Urban Studies(Barnard)	7	0	0	0	7
+visualarts	Visual Arts (Arts)	3	0	2	0	5
+women'sstudies	Women's and Gender Studies	1	0	0	0	1
+grandtotals	319	37	28	384	0	
 NA	NA	NA	NA	NA	Total Number of Degrees	338

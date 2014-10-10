@@ -1,44 +1,44 @@
-AmericanStudies	American Studies	1	0	0	0	1
-Anthropology	Anthropology	8	0	0	0	8
-Archaeology	Art History & Archaeology	1	0	0	0	1
-Architecture	Architecture, Planning And Preservation	1	0	0	0	1
-Art History	Art History & Archaeology	8	0	2	1	11
-Art History andVisual Arts	NA	0	1	0	0	1
-Astronomy	Astronomy	1	0	0	0	1
-Astrophysics	Astronomy-Physics **	0	1	0	0	1
-BiologicalSciences	Biological Sciences	7	0	0	0	7
-ComparativeLiterature and Society	Center for Comparative Literature and Society	5	0	0	0	5
-ComputerScience	Computer Science	4	0	0	0	4
-Dance	Dance (Barnard)	0	0	1	0	1
-East AsianStudies	East Asian Languages & Cultures	2	0	0	0	2
-Economics	Economics	18	0	0	0	18
-Economics-Mathematics	Economics-Mathematics **	0	3	0	0	3
-Economics-OperationsResearch	Economics-Industrial Engineering & OperationsResearch **	0	1	0	0	1
-Economics-Philosophy	Economics-Philosophy **	0	1	0	0	1
-Economics-PoliticalScience	Economics-Political Science **	0	5	0	0	5
-EnglishLiterature	English & Comparative Literature	17	0	0	1	18
-EnvironmentalBiology	Ecology, Evolution, and Environmental Biology	3	0	0	0	3
-Film Studies	Film (School Of The Arts)	8	0	0	0	8
-French	French & Romance Philology	2	0	0	0	2
-HispanicStudies	Spanish & Portuguese	1	0	0	0	1
-History	History	32	0	2	0	34
-Latin AmericanStudies	Spanish & Portuguese	3	0	0	0	3
-Literature/Writing	Writing: Undergraduate (School Of The Arts)	18	0	0	0	18
-Mathematics	Mathematics	2	0	1	0	3
-Middle East andAsian Languages and Cultures	Middle East and Asian Languages and Cultures	6	0	0	0	6
-Music	Music	1	0	0	0	1
-Neuroscienceand Behavior	Biological Sciences-Psychology **	0	3	0	0	3
-Philosophy	Philosophy	8	0	0	0	8
-Physics	Physics	1	0	0	0	1
-PoliticalScience	Political Science	38	0	1	0	39
-Psychology	Psychology	13	0	1	0	14
-Religion	Religion	4	0	0	0	4
-Sociology	Sociology	9	0	0	0	9
-SpanishLanguage and Literature	Spanish & Portuguese	1	0	0	0	1
-Theatre Arts	Drama And Theatre Arts	2	0	0	0	2
-Urban Studies	Urban Studies	1	0	0	0	1
-Visual Arts	Visual Arts (School of The Arts)	2	0	1	0	3
-Women's Studies	Women's and Gender Studies	1	0	0	0	1
-Writing	Writing: Undergraduate (School Of The Arts)	0	0	4	0	4
+americanstudies	American Studies	1	0	0	0	1
+anthropology	Anthropology	8	0	0	0	8
+archaeology	Art History & Archaeology	1	0	0	0	1
+architecture	Architecture, Planning And Preservation	1	0	0	0	1
+arthistory	Art History & Archaeology	8	0	2	1	11
+arthistoryandvisualarts	NA	0	1	0	0	1
+astronomy	Astronomy	1	0	0	0	1
+astrophysics	Astronomy-Physics **	0	1	0	0	1
+biologicalsciences	Biological Sciences	7	0	0	0	7
+comparativeliteratureandsociety	Center for Comparative Literature and Society	5	0	0	0	5
+computerscience	Computer Science	4	0	0	0	4
+dance	Dance (Barnard)	0	0	1	0	1
+eastasianstudies	East Asian Languages & Cultures	2	0	0	0	2
+economics	Economics	18	0	0	0	18
+economicsmathematics	Economics-Mathematics **	0	3	0	0	3
+economicsoperationsresearch	Economics-Industrial Engineering & OperationsResearch **	0	1	0	0	1
+economicsphilosophy	Economics-Philosophy **	0	1	0	0	1
+economicspoliticalscience	Economics-Political Science **	0	5	0	0	5
+englishliterature	English & Comparative Literature	17	0	0	1	18
+environmentalbiology	Ecology, Evolution, and Environmental Biology	3	0	0	0	3
+filmstudies	Film (School Of The Arts)	8	0	0	0	8
+french	French & Romance Philology	2	0	0	0	2
+hispanicstudies	Spanish & Portuguese	1	0	0	0	1
+history	History	32	0	2	0	34
+latinamericanstudies	Spanish & Portuguese	3	0	0	0	3
+literature/writing	Writing: Undergraduate (School Of The Arts)	18	0	0	0	18
+mathematics	Mathematics	2	0	1	0	3
+middleeastandasianlanguagesandcultures	Middle East and Asian Languages and Cultures	6	0	0	0	6
+music	Music	1	0	0	0	1
+neuroscienceandbehavior	Biological Sciences-Psychology **	0	3	0	0	3
+philosophy	Philosophy	8	0	0	0	8
+physics	Physics	1	0	0	0	1
+politicalscience	Political Science	38	0	1	0	39
+psychology	Psychology	13	0	1	0	14
+religion	Religion	4	0	0	0	4
+sociology	Sociology	9	0	0	0	9
+spanishlanguageandliterature	Spanish & Portuguese	1	0	0	0	1
+theatrearts	Drama And Theatre Arts	2	0	0	0	2
+urbanstudies	Urban Studies	1	0	0	0	1
+visualarts	Visual Arts (School of The Arts)	2	0	1	0	3
+women'sstudies	Women's and Gender Studies	1	0	0	0	1
+writing	Writing: Undergraduate (School Of The Arts)	0	0	4	0	4
 Grand Totals	Grand Totals	229	15	13	2	259
 NA	NA	NA	NA	NA	Total Number of Degrees	239
