@@ -12,7 +12,7 @@ extract <- function(filename) {
 import <- function() {
     range <- 2003:2010
     jpeg("Degrees and Headcounts by Year.jpg")
-    a <- sapply(range, function(x) sprintf("../cc-%d.tsv", x))
+    a <- sapply(range, function(x) sprintf("data/cc-%d.tsv", x))
     b <- sapply(a, function(x) extract(x))
     plot(range, b[1, ], ylim = c(950, 1450), type = "b", col = 'red',
          xlab = "", ylab = "", pch = c(15))

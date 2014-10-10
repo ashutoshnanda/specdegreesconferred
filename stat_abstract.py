@@ -45,7 +45,8 @@ urls = {2012: ("http://www.columbia.edu/cu/opir/abstract/opir_ccug_degrees_by_pr
 
 sep = "================================================="
 
-file_format = "%s-%d.html"
+web_file_format = "html/%s-%d.html"
+data_file_format = 'data/%s-%d.tsv'
 
 #===============================================
 
@@ -73,7 +74,7 @@ def save_pages():
         print(key)
         for i, filetype in enumerate(['cc', 'en', 'gs']):
             try:
-                urllib.request.urlretrieve(urls[key][i], file_format % (filetype, key))
+                urllib.request.urlretrieve(urls[key][i], web_file_format % (filetype, key))
             except urllib.error.ContentTooShortError:
                 print('Content too short: %s - %d' % (filetype, key))
             
@@ -95,7 +96,7 @@ def file_to_tsv(key, filetype):
 def file_to_matrix(key, filetype):
     print(str(key) + " - " + filetype)
     print(sep)
-    file = open(file_format % (filetype, key), 'r')
+    file = open(web_file_format % (filetype, key), 'r')
     bigstring = ""
     for line in [line.strip().replace("&nbsp;", "").replace("&amp;", "&") for line in file.readlines()]:
         bigstring += line
@@ -158,7 +159,7 @@ def file_to_matrix(key, filetype):
     return table
         
 def matrix_to_tsv(table, key, filetype):
-    file = open((file_format % (filetype, key)).replace('html', 'tsv'), 'w')
+    file = open(data_file_format % (filetype, key), 'w')
     for row in table:
         if any([type(item) == int for item in row]):
             for (i, item) in enumerate(row):            
