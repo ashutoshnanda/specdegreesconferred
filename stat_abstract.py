@@ -152,18 +152,21 @@ def file_to_matrix(key, filetype):
                 table[i][-1] = item
                 table[i][-2] = "Total Number of Degrees"
             elif type(table[i][2]) == int:
-                table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], table[i][4] + table[i][5], table[i][6], table[i][7]]
+                #TITLE IN HERE
+                table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], table[i][4] + table[i][5], table[i][6], table[i][7]]
     elif key > 2010:
         for i in range(len(table)):
             if len(table[i]) > 2 and type(table[i][2]) == int:
                 if filetype == 'cc' or filetype == 'gs':
                     if len(table[i]) > 5:
-                        table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], table[i][4], 0, table[i][5]]
+                        #TITLE IN HERE
+                        table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], table[i][4], 0, table[i][5]]
                     else:
                         table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
                 else:
                     #filetype == 'en'
-                    table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]
+                    #TITLE IN HERE
+                    table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]
             else:
                 if any([type(table[i][j]) == int for j in range(len(table[i]))]):
                     number = 0
@@ -189,6 +192,19 @@ def matrix_to_tsv(table, key, filetype):
                 else:
                     file.write(str(item) + "\n") 
     file.close()
+
+def convert_to_standardized_string(str):
+    #convert to lowercase
+    newstr = str.lower()
+    #take out whitespaces
+    newstr = newstr.replace(" ", "")
+
+    if "&" in newstr:
+        newstr = newstr.replace("&", "and")
+    elif "-" in newstr:
+        newstr = newstr.replace ("-", "")
+
+    return newstr
 
 #===============================================
         
