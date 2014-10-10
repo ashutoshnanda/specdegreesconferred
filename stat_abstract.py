@@ -138,7 +138,11 @@ def file_to_matrix(key, filetype):
     print()
     if key < 2011:
         for i in range(len(table)):
-            if sum([type(item) == int for item in table[i]]) == 1:
+            if any([type(item) != int and 'grand' in item.lower() for item in table[i]]):
+                table[i][0] = table[i][1]
+                val = table[i].pop(len(table[i]) - 3)
+                table[i][-3] += val
+            elif sum([type(item) == int for item in table[i]]) == 1:
                 value = 0
                 for item in table[i]:
                     if type(item) == int:
@@ -149,8 +153,6 @@ def file_to_matrix(key, filetype):
                 table[i][-2] = "Total Number of Degrees"
             elif type(table[i][2]) == int:
                 table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], table[i][4] + table[i][5], table[i][6], table[i][7]]
-            elif table[i][0] == '' and 'grand' in table[i][1].lower():
-                table[i][0] = 'Grand Totals'
     elif key > 2010:
         for i in range(len(table)):
             if len(table[i]) > 2 and type(table[i][2]) == int:
