@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-Anthropology	Anthropology (A&S)	0	0	0	1	1
-Applied Mathematics	Applied Physics And AppliedMathematics	30	0	0	11	41
-Applied Physics	Applied Physics And AppliedMathematics	16	0	0	0	16
-Architecture	Architecture (Barnard)	0	0	0	5	5
-ArtHistory	Art History& Archaeology (A&S)	0	0	0	2	2
-Biomedical Engineering	Biomedical Engineering	42	0	0	0	42
-Chemical Engineering	Chemical Engineering	32	0	0	0	32
-Civil Engineering	Civil Engineering &Engineering Mechanics	45	0	0	1	46
-Computer Engineering	Computer Science-ElectricalEngineering **	0	16	0	0	16
-ComputerScience	ComputerScience	43	0	0	17	60
-Dance	Dance (Barnard)	0	0	0	2	2
-Earth and EnvironmentalEngineering	Earth & Environ.Engineering	22	0	0	4	26
-East Asian Languagesand Cultures	East Asian Languages &Cultures (A&S)	0	0	0	3	3
-Economics	Economics (A&S)	0	0	0	54	54
-ElectricalEngineering	ElectricalEngineering	34	0	0	1	35
-Engineering Mechanics	Civil Engineering &Engineering Mechanics	1	0	0	0	1
-English and ComparativeLiterature	English & ComparativeLiterature (A&S)	0	0	0	1	1
-Entrepreneurship	Columbia College (A&S)	0	0	0	9	9
-French	French & Romance Philology(A&S)	0	0	0	3	3
-History	History(A&S)	0	0	0	4	4
-Hispanic Studies	Latin American and IberianCultures (A&S)	0	0	0	2	2
-Industrial Engineering	Industrial Engineering &Operations Research	2	0	0	0	2
-Materials Science andEngineering	Applied Physics And AppliedMathematics	9	0	0	0	9
-Mechanical Engineering	Mechanical Engineering	61	0	0	6	67
-Music	Music (A&S)	0	0	0	1	1
-Operations Research	Industrial Engineering &Operations Research	16	0	0	0	16
-Operations Research:Financial Engineering	Industrial Engineering &Operations Research	27	0	0	0	27
-OperationsResearch:Engineering and Management Systems	Industrial Engineering &Operations Research	35	0	0	0	35
-Philosophy	Philosophy (A&S)	0	0	0	1	1
-Political Science	Political Science (A&S)	0	0	0	2	2
-Psychology	Psychology (A&S)	0	0	0	1	1
-Spanish	(A&S)	0	0	0	1	1
-Statistics	Statistics (A&S)	0	0	0	2	2
-Sustainable Engineering	Engineering	0	0	0	2	2
-Grand Totals	415	16	136	0	567	
-NA	NA	NA	Total number of degrees awarded:	431	
-=======
 Anthropology	Anthropology (A&S)	0	0	0	1	1
 Applied Mathematics	Applied Physics And AppliedMathematics	30	0	0	11	41
 Applied Physics	Applied Physics And AppliedMathematics	16	0	0	0	16
@@ -72,4 +34,3 @@ Statistics	Statistics (A&S)	0	0	0	2	2
 Sustainable Engineering	Engineering	0	0	0	2	2
 Grand Totals	415	16	136	0	567	
 NA	NA	NA	NA	NA	Total Number of Degrees	431
->>>>>>> FETCH_HEAD
