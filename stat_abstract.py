@@ -154,7 +154,10 @@ def file_to_matrix(key, filetype):
         for i in range(len(table)):
             if len(table[i]) > 2 and type(table[i][2]) == int:
                 if filetype == 'cc' or filetype == 'gs':
-                    table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], table[i][4], 0, table[i][5]]
+                    if len(table[i]) > 5:
+                        table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], table[i][4], 0, table[i][5]]
+                    else:
+                        table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
                 else:
                     #filetype == 'en'
                     table[i] = [table[i][0], table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]                    
