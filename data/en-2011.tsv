@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 NA	23	
 2012	2013	
 Applied Mathematics	Applied Physics And AppliedMathematics	23	0	0	0	23
@@ -33,3 +34,40 @@ Statistics	Statistics (A&S)	0	0	0	2	2
 SustainableEngineering	Engineering	0	0	0	1	1
 Grand Totals	397	17	161	0	575	
 NA	NA	NA	Total number of degrees awarded:	416	
+=======
+NA	NA	NA	NA	NA	Total Number of Degrees	23
+NA	NA	NA	NA	NA	Total Number of Degrees	2012
+Applied Mathematics	Applied Physics And AppliedMathematics	23	0	0	0	23
+Applied Mathematics	Mathematics (A&S)	0	0	0	10	10
+Applied Physics	Applied Physics And AppliedMathematics	10	0	0	0	10
+Architecture	Architecture (Barnard)	0	0	0	8	8
+Biomedical Engineering	Biomedical Engineering	35	0	0	1	36
+ChemicalEngineering	ChemicalEngineering	44	0	0	1	45
+Civil Engineering	Civil Engineering &Engineering Mechanics	42	0	0	4	46
+Computer Engineering	Computer Science, ElectricalEngineering **	0	17	0	0	17
+Computer Science	Computer Science	30	0	0	14	44
+Earth and EnvironmentalEngineering	Earth & Environ.Engineering	26	0	0	4	30
+EastAsian Languages and Cultures	East AsianLanguages & Cultures (A&S)	0	0	0	5	5
+Economics	Economics (A&S)	0	0	0	62	62
+Electrical Engineering	Electrical Engineering	24	0	0	4	28
+English and ComparativeLiterature	English & ComparativeLiterature (A&S)	0	0	0	2	2
+Entrepreneurship	Engineering	0	0	0	13	13
+German	GermanicLanguages (A&S)	0	0	0	2	2
+Hispanic Studies	Latin American and IberianCultures (A&S)	0	0	0	2	2
+History	History (A&S)	0	0	0	2	2
+Industrial Engineering	Industrial Engineering &Operations Research	3	0	0	0	3
+Materials Science andEngineering	Applied Physics And AppliedMathematics	3	0	0	5	8
+MechanicalEngineering	MechanicalEngineering	64	0	0	5	69
+Music	Music (A&S)	0	0	0	2	2
+Operations Research	Industrial Engineering &Operations Research	22	0	0	0	22
+Operations Research:Financial Engineering	Industrial Engineering &Operations Research	26	0	0	0	26
+OperationsResearch:Engineering and Management Systems	Industrial Engineering &Operations Research	45	0	0	0	45
+Philosophy	Philosophy(A&S)	0	0	0	2	2
+Political Science	Political Science (A&S)	0	0	0	4	4
+Psychology	Psychology (A&S)	0	0	0	5	5
+Spanish	Latin American and IberianCultures (A&S)	0	0	0	1	1
+Statistics	Statistics (A&S)	0	0	0	2	2
+SustainableEngineering	Engineering	0	0	0	1	1
+Grand Totals	397	17	161	0	575	
+NA	NA	NA	NA	NA	Total Number of Degrees	416
+>>>>>>> FETCH_HEAD
