@@ -63,7 +63,7 @@ def is_number(s):
 
 def print_urls():
     for key in urls:
-        print(key)
+        print(key)  
         print(sep)
         print(urls[key][0])
         print(urls[key][1])
@@ -156,19 +156,22 @@ def file_to_matrix(key, filetype):
                 table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], table[i][4] + table[i][5], table[i][6], table[i][7]]
     elif key > 2010:
         for i in range(len(table)):
-            if len(table[i]) > 2 and type(table[i][2]) == int:
+            if len(table[i]) > 4 and type(table[i][2]) == int:
                 if filetype == 'cc' or filetype == 'gs':
                     if len(table[i]) > 5:
-                        #TITLE IN HERE
                         table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], table[i][4], 0, table[i][5]]
                     else:
                         table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
+                    if not(len(list(filter(lambda x: x != '', table[i]))) > 6):
+                        table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
                 else:
-                    #filetype == 'en'
-                    #TITLE IN HERE
-                    table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]
+                    table[i] = list(filter(lambda x: x != "", table[i]))
+                    if len(table[i]) == 6:
+                        table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], 0, table[i][4], table[i][5]]
+                    else:
+                        table[i] = [convert_to_standardized_string(table[i][0]), 'Grand Totals', table[i][1], table[i][2], 0, table[i][3], table[i][4]]
             else:
-                if any([type(table[i][j]) == int for j in range(len(table[i]))]):
+                if any([type(table[i][j]) == int for j in range(len(table[i]))]) and len(table[i]) > 4:
                     number = 0
                     for j in range(len(table[i])):
                         if type(table[i][j]) == int:
@@ -181,8 +184,8 @@ def matrix_to_tsv(table, key, filetype):
     if not os.path.isdir(data_dir):
         os.mkdir(data_dir)
     file = open(data_file_format % (filetype, key), 'w')
-    for row in table:
-        if any([type(item) == int for item in row]):
+    for i, row in enumerate(table):
+        if any([type(item) == int for item in row]) and len(row) > 5:
             for (i, item) in enumerate(row):            
                 if i != len(row) - 1:
                     if item == '':
