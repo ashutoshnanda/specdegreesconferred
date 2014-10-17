@@ -184,6 +184,7 @@ def matrix_to_tsv(table, key, filetype):
     if not os.path.isdir(data_dir):
         os.mkdir(data_dir)
     file = open(data_file_format % (filetype, key), 'w')
+    file.write("Program Description\tOffering Units\tMajor\tInterdepartmental Major\tConcentration\tMinor\tTotals\n")
     for i, row in enumerate(table):
         if any([type(item) == int for item in row]) and len(row) > 5:
             for (i, item) in enumerate(row):            
