@@ -1,4 +1,4 @@
-Program Description	Offering Units	Major	Interdepartmental Major	Concentration	Minor	Totals
+Program Description	Offering Unit(s)	Major	Interdepartmental Major	Concentration	Minor	Totals
 appliedmathematics	Applied Physics And Applied Mathematics	22	0	0	0	22
 appliedmathematics	Engineering	0	0	0	3	3
 appliedphysics	Applied Physics And Applied Mathematics	14	0	0	0	14
@@ -33,5 +33,5 @@ operationsresearch:engineeringandmanagementsystems	Industrial Engineering & Oper
 philosophy	Engineering	0	0	0	3	3
 politicalscience	Engineering	0	0	0	2	2
 psychology	Engineering	0	0	0	1	1
-Grand Totals	Grand Totals	325	18	0	130	473
+grandtotals	Grand Totals	325	18	0	130	473
 NA	NA	NA	NA	NA	Total Number of Degrees	341

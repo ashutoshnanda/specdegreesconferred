@@ -1,4 +1,4 @@
-Program Description	Offering Units	Major	Interdepartmental Major	Concentration	Minor	Totals
+Program Description	Offering Unit(s)	Major	Interdepartmental Major	Concentration	Minor	Totals
 africanamericanstudies	Institute for Research in African American Studies	0	0	1	0	1
 americanstudies	American Studies	9	0	1	0	10
 anthropology	Anthropology	29	0	11	0	40
@@ -66,5 +66,5 @@ statistics	Statistics	1	0	2	0	3
 urbanstudies	Urban Studies	10	0	0	0	10
 visualarts	Visual Arts (School of The Arts)	9	0	4	0	13
 women'sandgenderstudies	Women's and Gender Studies	4	0	1	0	5
-Grand Totals	Grand Totals	928	150	209	0	1287
+grandtotals	Grand Totals	928	150	209	0	1287
 NA	NA	NA	NA	NA	Total Number of Degrees	1029

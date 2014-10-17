@@ -100,11 +100,9 @@ def file_to_matrix(key, filetype):
     print(sep)
     f = open(web_file_format % (filetype, key), 'r')
     bigstring = ""
-    for line in f.readlines():
-        print(line)
     for line in [line.strip().replace("&nbsp;", "").replace("&amp;", "&") for line in f.readlines()]:
         bigstring += line
-    file.close()
+    f.close()
     biglist = []
     while len(bigstring) != 0:
         iterate = extract(bigstring)

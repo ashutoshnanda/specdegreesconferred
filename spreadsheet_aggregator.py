@@ -26,7 +26,6 @@ def aggregate_to_dictionary(tsv_list):
 				else:
 					#tuple composed of number of majors, and number of total academic accreditation
 					name_to_major_count[major_name][year] = (line_list[2], line_list[-1])
-				print(name_to_major_count[major_name][year])
 	return name_to_major_count
 
 def dictionary_to_spreadsheet(dictionary, spreadsheet_name):
