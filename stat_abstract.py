@@ -98,9 +98,11 @@ def file_to_tsv(key, filetype):
 def file_to_matrix(key, filetype):
     print(str(key) + " - " + filetype)
     print(sep)
-    file = open(web_file_format % (filetype, key), 'r')
+    f = open(web_file_format % (filetype, key), 'r')
     bigstring = ""
-    for line in [line.strip().replace("&nbsp;", "").replace("&amp;", "&") for line in file.readlines()]:
+    for line in f.readlines():
+        print(line)
+    for line in [line.strip().replace("&nbsp;", "").replace("&amp;", "&") for line in f.readlines()]:
         bigstring += line
     file.close()
     biglist = []
@@ -139,7 +141,7 @@ def file_to_matrix(key, filetype):
     if key < 2011:
         for i in range(len(table)):
             if any([type(item) != int and 'grand' in item.lower() for item in table[i]]):
-                table[i][0] = table[i][1]
+                table[i][0] = convert_to_standardized_string(table[i][1])
                 val = table[i].pop(len(table[i]) - 3)
                 table[i][-3] += val
             elif sum([type(item) == int for item in table[i]]) == 1:
@@ -161,9 +163,9 @@ def file_to_matrix(key, filetype):
                     if len(table[i]) > 5:
                         table[i] = [convert_to_standardized_string(table[i][0]), table[i][1], table[i][2], table[i][3], table[i][4], 0, table[i][5]]
                     else:
-                        table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
+                        table[i] = [convert_to_standardized_string(table[i][0]), 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
                     if not(len(list(filter(lambda x: x != '', table[i]))) > 6):
-                        table[i] = [table[i][0], 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
+                        table[i] = [convert_to_standardized_string(table[i][0]), 'Grand Totals', table[i][1], table[i][2], table[i][3], 0, table[i][4]]
                 else:
                     table[i] = list(filter(lambda x: x != "", table[i]))
                     if len(table[i]) == 6:
@@ -184,10 +186,10 @@ def matrix_to_tsv(table, key, filetype):
     if not os.path.isdir(data_dir):
         os.mkdir(data_dir)
     file = open(data_file_format % (filetype, key), 'w')
-    file.write("Program Description\tOffering Units\tMajor\tInterdepartmental Major\tConcentration\tMinor\tTotals\n")
+    file.write("Program Description\tOffering Unit(s)\tMajor\tInterdepartmental Major\tConcentration\tMinor\tTotals\n")
     for i, row in enumerate(table):
         if any([type(item) == int for item in row]) and len(row) > 5:
-            for (i, item) in enumerate(row):            
+           for (i, item) in enumerate(row):            
                 if i != len(row) - 1:
                     if item == '':
                         file.write("NA\t")
