@@ -16,16 +16,25 @@ def aggregate_to_dictionary(tsv_list):
 			if i != 0:
 				line_list = line.strip().split("\t")
 				major_name = line_list[0]
+				num_total = line_list[-1]
+				num_majors = line_list[2]
+
+				#if major_name is "NA", the title of the line is Total Number of Degrees Conferred
 				if major_name == 'NA':
 					major_name = line_list[-2]
+
+				#adds missing major_name to dictionary
 				if major_name not in name_to_major_count:
 					name_to_major_count[major_name] = {}
-
-				if line_list[2] == 'NA':
-					name_to_major_count[major_name][year] = (line_list[-1], 0)
+				if year not in name_to_major_count[major_name]:
+					#name_to_major_count[major_name][year]= (str(int(name_to_major_count[major_name][year][0]) + int(line_list[2])), line_list[-1])
+					if num_majors == 'NA':
+						name_to_major_count[major_name][year] = num_total
+					else:
+						name_to_major_count[major_name][year]= num_majors
 				else:
-					#tuple composed of number of majors, and number of total academic accreditation
-					name_to_major_count[major_name][year] = (line_list[2], line_list[-1])
+					name_to_major_count[major_name][year]= str(int(name_to_major_count[major_name][year]) + int(num_majors))
+
 	return name_to_major_count
 
 def dictionary_to_spreadsheet(dictionary, spreadsheet_name):
@@ -79,6 +88,6 @@ def get_gs_tsv_list():
 	return tsv_list
 
 if __name__ == "__main__":
-    dictionary_to_spreadsheet(aggregate_to_dictionary(get_cc_tsv_list()), spreadsheet_name_cc)
+    #dictionary_to_spreadsheet(aggregate_to_dictionary(get_cc_tsv_list()), spreadsheet_name_cc)
     dictionary_to_spreadsheet(aggregate_to_dictionary(get_en_tsv_list()), spreadsheet_name_en)
-    dictionary_to_spreadsheet(aggregate_to_dictionary(get_gs_tsv_list()), spreadsheet_name_gs)
+    #dictionary_to_spreadsheet(aggregate_to_dictionary(get_gs_tsv_list()), spreadsheet_name_gs)
