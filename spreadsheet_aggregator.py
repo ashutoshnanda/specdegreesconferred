@@ -27,11 +27,10 @@ def aggregate_to_dictionary(tsv_list):
 				if major_name not in name_to_major_count:
 					name_to_major_count[major_name] = {}
 				if year not in name_to_major_count[major_name]:
-					#name_to_major_count[major_name][year]= (str(int(name_to_major_count[major_name][year][0]) + int(line_list[2])), line_list[-1])
 					if num_majors == 'NA':
 						name_to_major_count[major_name][year] = num_total
 					else:
-						name_to_major_count[major_name][year]= num_majors
+						name_to_major_count[major_name][year]= num_total
 				else:
 					name_to_major_count[major_name][year]= str(int(name_to_major_count[major_name][year]) + int(num_majors))
 
@@ -57,8 +56,8 @@ def dictionary_to_spreadsheet(dictionary, spreadsheet_name):
 			if val == None:
 				f.write('0')
 			else:
-				f.write(val[0])
-			#print(spreadsheet_name, i, major, val)
+				f.write(val)
+			print(spreadsheet_name, i, major, val)
 			if i != 2012:
 				f.write("\t")
 			else:
@@ -88,6 +87,6 @@ def get_gs_tsv_list():
 	return tsv_list
 
 if __name__ == "__main__":
-    dictionary_to_spreadsheet(aggregate_to_dictionary(get_cc_tsv_list()), spreadsheet_name_cc)
+    #dictionary_to_spreadsheet(aggregate_to_dictionary(get_cc_tsv_list()), spreadsheet_name_cc)
     dictionary_to_spreadsheet(aggregate_to_dictionary(get_en_tsv_list()), spreadsheet_name_en)
-    dictionary_to_spreadsheet(aggregate_to_dictionary(get_gs_tsv_list()), spreadsheet_name_gs)
+    #dictionary_to_spreadsheet(aggregate_to_dictionary(get_gs_tsv_list()), spreadsheet_name_gs)
