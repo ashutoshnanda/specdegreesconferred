@@ -204,10 +204,11 @@ def convert_to_standardized_string(str):
     newstr = newstr.replace(" ", "")
 
     if "&" in newstr:
-        newstr = newstr.replace("&", "and")
-    elif "-" in newstr:
-        newstr = newstr.replace ("-", "")
-
+            newstr = newstr.replace("&", "and")
+    if "-" in newstr:
+            newstr = newstr.replace ("-", "")  
+    if r"/" in newstr:
+            newstr = newstr.replace(r"/", "and")
     return newstr
 
 #===============================================

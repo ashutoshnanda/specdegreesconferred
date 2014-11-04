@@ -44,8 +44,34 @@ import <- function(school) {
     dev.off()
 }
 
+achievement <- function() {
+    range <- 2003:2012
+    school = "cc"
+    a <- sapply(range, function(x) sprintf("data/%s-%d.tsv", school, x))
+    b <- sapply(a, function(x) extract(x))
+    jpeg("Achievement Factor.jpg")
+    plot(range, b[1, ] / b[2, ], ylim = c(1, 1.5), type = "b", col = 'green',
+        xlab = "Year", ylab = "Ratio", pch = c(15), 
+        main = sprintf("Achievement Factor", long.school))
+    par(new = T)
+    school = "en"
+    a <- sapply(range, function(x) sprintf("data/%s-%d.tsv", school, x))
+    b <- sapply(a, function(x) extract(x))
+    plot(range, b[1, ] / b[2, ], ylim = c(1, 1.5), type = "b", col = 'red',
+         xlab = "Year", ylab = "Ratio", pch = c(15), 
+         main = "Achievement Factor")
+    par(new = T)
+    school = "gs"
+    a <- sapply(range, function(x) sprintf("data/%s-%d.tsv", school, x))
+    b <- sapply(a, function(x) extract(x))
+    plot(range, b[1, ] / b[2, ], ylim = c(1, 1.5), type = "b", col = 'blue', 
+         pch = c(15))
+    dev.off()
+}
+
 all <- function() {
     import("cc")
     import("en")
     import("gs")
+    achievement()
 }

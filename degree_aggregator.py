@@ -35,7 +35,7 @@ def degree_dict_outputter(lst):
 		print tup[0] + ": " + str(tup[1])
 
 """
-Converts string to lowercase and removes hyphens, ampersands and whitespace
+Converts string to lowercase and removes hyphens, ampersands, whitespace, and slashes
 """
 def convert_to_standardized_string(str):
 	#convert to lowercase
@@ -45,9 +45,11 @@ def convert_to_standardized_string(str):
 
 	if "&" in newstr:
 		newstr = newstr.replace("&", "and")
-	elif "-" in newstr:
+        if "-" in newstr:
 		newstr = newstr.replace ("-", "")
-
+        print(newstr)
+        if "//" in newstr:
+                newstr = newstr.replace("/", "")
 	return newstr
 
 
