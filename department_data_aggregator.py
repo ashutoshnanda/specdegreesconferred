@@ -30,6 +30,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+import shutil
 
 yearly_data_dir = "data"
 department_data_dir = "department_data"
@@ -97,8 +98,9 @@ def extract_year_dictionary(school):
                     minors = int(data[5])
                     totalmajors = majors + interdepartmental_majors
                     totalminors = concentrations + minors
-                    department2information[major_name] = (totalmajors, 
-                                                          totalminors)
+                    previous = department2information.get(major_name, (0, 0))
+                    new = (totalmajors + previous[0], totalminors + previous[1])
+                    department2information[major_name] = new
         years2department[year] = (degrees_conferred, department2information)
     return years2department
 
@@ -166,6 +168,12 @@ def plot_all_spreadsheets(school):
     school_spreadsheets = list(filter(lambda x: x.startswith(school), 
                                       all_spreadsheets))
     school_spreadsheets.sort()
+    top = os.path.join(departmental_plots_dir, school)
+    for root, dirs, files in os.walk(top, topdown=False):
+        for name in files:
+            os.remove(os.path.join(root, name))
+        for name in dirs:
+            os.rmdir(os.path.join(root, name))
     for i in range(6):
         path = os.path.join(departmental_plots_dir,
                             school,
@@ -210,6 +218,7 @@ def plot_all_spreadsheets(school):
                                      index2description[i],
                                      title + ".png"))
             plt.close()
+            
 def write_out_and_plot_all_department_spreadsheets():
     '''
     This method encapsulates the usual chain of calls to produce all of the 

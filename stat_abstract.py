@@ -209,6 +209,8 @@ def convert_to_standardized_string(str):
             newstr = newstr.replace ("-", "")  
     if r"/" in newstr:
             newstr = newstr.replace(r"/", "and")
+    if ":" in newstr:
+            newstr = newstr.replace(":", " ");
     return newstr
 
 #===============================================
